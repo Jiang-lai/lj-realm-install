@@ -127,15 +127,15 @@ Restart=on-failure
 RestartSec=5s
 DynamicUser=true
 WorkingDirectory=/etc/realm
-ExecStart=/usr/local/bin/realm -c /etc/realm/config.toml
+ExecStart=/usr/local/bin/realm -c /etc/realm/realm.toml
 
 [Install]
 WantedBy=multi-user.target
 EOF
 
     # 创建配置文件（如果不存在）
-    if [ ! -f "/etc/realm/config.toml" ]; then
-        cat > /etc/realm/config.toml << EOF
+    if [ ! -f "/etc/realm/realm.toml" ]; then
+        cat > /etc/realm/realm.toml << EOF
 [[endpoints]]
 listen = "0.0.0.0:5000"
 remote = "1.1.1.1:443"
