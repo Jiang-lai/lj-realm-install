@@ -1,5 +1,5 @@
 # realm一键安装脚本
-### 自用，不会写shell，拿AI搓的
+### 自用，不会写shell，拿AI搓的，仅在Debian12上测试过
 使用方法：
 ```
 sudo curl https://raw.githubusercontent.com/Jiang-lai/lj-realm-install/refs/heads/main/realm-install.sh | bash
