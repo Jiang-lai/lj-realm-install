@@ -3,7 +3,7 @@
 使用方法：
 ```
 sudo curl https://raw.githubusercontent.com/Jiang-lai/lj-realm-install/refs/heads/main/realm-install.sh | bash
-systemctl enable --now realm 
+sudo systemctl enable --now realm 
 ```
 
 
